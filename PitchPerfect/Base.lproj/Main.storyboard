@@ -70,11 +70,11 @@
             </objects>
             <point key="canvasLocation" x="1064.885496183206" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="0mQ-SS-rmZ">
             <objects>
-                <viewController id="A3p-cO-qFq" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tZh-Av-oTM">
+                <viewController id="A3p-cO-qFq" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZh-Av-oTM" customClass="Play">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="v4p-XU-sun"/>
