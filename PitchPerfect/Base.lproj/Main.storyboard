@@ -77,8 +77,51 @@
                     <view key="view" contentMode="scaleToFill" id="tZh-Av-oTM" customClass="Play">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ddF-6u-LOf">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gFK-k3-7be">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="357.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e9-co-J08" userLabel="Slow Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="357.66666666666669"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Slow"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNL-17-U8s" userLabel="Fast Button">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="357.66666666666669"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Fast"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="C8q-LW-mgJ">
+                                        <rect key="frame" x="0.0" y="357.66666666666674" width="393" height="357.33333333333326"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbw-kx-sa3" userLabel="High Pitch Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="357.33333333333331"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="HighPitch"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ux3-rg-bpU" userLabel="Low Pitch Button">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="357.33333333333331"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="LowPitch"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="v4p-XU-sun"/>
-                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="ddF-6u-LOf" firstAttribute="top" secondItem="v4p-XU-sun" secondAttribute="top" id="HCt-Dc-v6z"/>
+                            <constraint firstItem="ddF-6u-LOf" firstAttribute="leading" secondItem="v4p-XU-sun" secondAttribute="leading" id="ZA0-Q8-ajO"/>
+                            <constraint firstItem="v4p-XU-sun" firstAttribute="trailing" secondItem="ddF-6u-LOf" secondAttribute="trailing" id="xJl-qw-QLY"/>
+                            <constraint firstItem="v4p-XU-sun" firstAttribute="bottom" secondItem="ddF-6u-LOf" secondAttribute="bottom" id="y9r-d2-15r"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I1P-Mw-cvv"/>
                 </viewController>
@@ -106,7 +149,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fast" width="90" height="90"/>
+        <image name="HighPitch" width="90" height="90"/>
+        <image name="LowPitch" width="90" height="90"/>
         <image name="RecordButton" width="155" height="155"/>
+        <image name="Slow" width="90" height="90"/>
         <image name="Stop" width="155" height="155"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -114,8 +161,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
